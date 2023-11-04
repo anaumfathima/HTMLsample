@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculate sum</title>
+<script>
+function calculatesum()
+{
+var n = parseInt(document.getElementById("num").value);
+var sum = 0;
+for( var i=1;i<=n;i++)
+{
+sum = sum+i;
+}
+document.getElementById("res").value=sum;
+}
+</script>
+<style>
+div{
+    width:600px;
+padding:40px;
+background-color:#92D7F0;
+border-radius:15px;
+}
+h1{
+background-color:#CC99FF;
+}
+h2{
+background-color:#E6E97F;
+}
+body{
+background-color:S;
+}
+</style>
+</head>
+<body>
+<center>
+<h1><b>Sum of n natural numbers</b><h1>
+
+</center>
+<center>
+<div>
+<table>
+<tr>
+<th><b>Enter the value of n:</b></th>
+<td><input type = "number" id = "num" placeholder="value of n"></td>
+</tr>
+<tr>
+<th><b>Result :</b></th>
+<td><input type="number"  id = "res"></td>
+</tr>
+</table>
+<input type= "button" value = "calculate" onclick="calculatesum()">
+</center>
+</div>
+</body>
+</html>
