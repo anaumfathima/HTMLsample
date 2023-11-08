@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>student validity</title>
+<script>
+function Validate(){
+var pattern1 =/[1-4][A-Z][A-Z][0-9][0-9][A-Z][A-Z][0-9][0-9][0-9]$/;
+usn = document.getElementById("usn");
+if(usn.value.match(pattern1))
+alert("VALID USN");
+else
+alert("INVALID USN");
+}
+</script>
+<style>
+div{
+width:500px;
+background-color:#FFBABA;
+padding:30px;
+margin:0 auto;
+border-radius:25px;
+border-spacing:10px;
+}
+body{
+background-color:#FFE3E3;
+}
+h2{
+background-color:#F3FF00;
+}
+h3{
+background-color:#BA8AE5;
+}
+</style>
+</head>
+<body>
+<h2><center>USN VALIDITY OF STUDENT</center></h2>
+
+<div>
+<form>
+<center>
+<table>
+<tr>
+<td><label="name">Enter name:</label></td>
+<td><input type = "text" id="name" ></td><br>
+</tr>
+
+<tr>
+<td><label="usn">Enter USN:</label></td>
+<td><input type = "text" id="usn" ></td>
+</tr>
+</table>
+<br>
+<input type = "submit" value ="CHECK USN " onclick="Validate()">
+</center>
+</form>
+</div>
+</body>
+</html>
