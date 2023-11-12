@@ -1,0 +1,25 @@
+span{
+font-size:12px;
+font-style:italic;
+color:darkred;
+}
+.faculty{
+font-size:23px;
+background-color:lavender;
+color:black;
+border: 3px solid black;
+margin:20px;
+padding:40px;
+}
+.branchname{
+color:black;
+font-size:30px;
+list-style-type:upper-roman;
+}
+h2{
+background-color:pink;
+font-style:italic;
+}
+h1{
+background-color:yellow;
+}
